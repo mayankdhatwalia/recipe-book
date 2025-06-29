@@ -29,10 +29,6 @@ A fully frontend Recipe Book web application that enables users to add, view, se
 - 🔄 **Undo Delete** - Restore accidentally deleted recipes
 - 🖨️ **Print Recipes** - Print-friendly recipe view
 
-## 🚀 Demo
-
-[Live Demo](#) <!-- Add your GitHub Pages link here -->
-
 ## 📸 Screenshots
 
 ### Home Page - Light Theme
@@ -128,7 +124,6 @@ recipe-book/
 ├── styles.css          # All styling
 ├── script.js           # Application logic
 ├── README.md          # Documentation
-└── LICENSE            # MIT License
 ```
 
 ## 🌐 Browser Compatibility
