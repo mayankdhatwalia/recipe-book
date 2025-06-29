@@ -209,10 +209,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - localStorage has a ~5-10MB limit depending on the browser
 - Some older browsers may not support all CSS features
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - Font Awesome for the beautiful icons
@@ -222,8 +218,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Project Link: [https://github.com/yourusername/recipe-book](https://github.com/yourusername/recipe-book)
+- GitHub: [](https://github.com/mayankdhatwalia)
+- Project Link: [](https://github.com/mayankdhatwalia/recipe-book)
 
 ---
 
