@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Book - Mayank's Cookbook</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.comq/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <h1><i class="fas fa-book"></i> Mayank's Recipes</h1>
+          <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Search Bar -->
+    <section class="search-section">
+      <div class="container">
+        <div class="search-container">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search recipes by name or ingredients..."
+          />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="vegan">Vegan</button>
+          <button class="filter-btn" data-filter="quick">Quick Meal</button>
+          <button class="filter-btn" data-filter="dessert">Dessert</button>
+        </div>
+      </div>
+    </section>
+    <!-- Add Recipe Button -->
+    <section class="action-section">
+      <div class="container">
+        <button id="add-recipe-btn" class="add-recipe-btn">
+          <i class="fas fa-plus"></i> Add New Recipe
+        </button>
+      </div>
+    </section>
+    <!-- Recipe Grid -->
+    <main class="recipe-grid-section">
+      <div class="container">
+        <div id="recipe-grid" class="recipe-grid"></div>
+        <div id="no-recipes" class="no-recipes" style="display: none">
+          <i class="fas fa-utensils"></i>
+          <p>No recipes found. Start by adding your first recipe!</p>
+        </div>
+      </div>
+    </main>
+    <!-- Add/Edit Recipe Modal -->
+    <div id="recipe-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title">Add New Recipe</h2>
+        <form id="recipe-form">
+          <input type="hidden" id="recipe-id" />
+          <div class="form-group">
+            <label for="recipe-name">Recipe Name *</label>
+            <input type="text" id="recipe-name" required />
+          </div>
+          <div class="form-group">
+            <label for="recipe-category">Category</label>
+            <select id="recipe-category">
+              <option value="">Select Category</option>
+              <option value="vegan">Vegan</option>
+              <option value="quick">Quick Meal</option>
+              <option value="dessert">Dessert</option>
+              <option value="main">Main Course</option>
+              <option value="appetizer">Appetizer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="prep-time">Preparation Time (minutes)</label>
+            <input type="number" id="prep-time" min="1" />
+          </div>
+
+          <div class="form-group">
+            <label for="recipe-ingredients">Ingredients * (one per line)</label>
+            <textarea
+              id="recipe-ingredients"
+              rows="5"
+              placeholder="2 cups flour&#10;1 cup sugar&#10;3 eggs"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="recipe-steps">Preparation Steps *</label>
+            <textarea
+              id="recipe-steps"
+              rows="6"
+              placeholder="1. Preheat oven to 350°F&#10;2. Mix dry ingredients&#10;3. Add wet ingredients..."
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="recipe-image">Recipe Image</label>
+            <input type="file" id="recipe-image" accept="image/*" />
+            <div id="image-preview" class="image-preview"></div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Save Recipe</button>
+            <button type="button" class="btn-secondary" id="cancel-btn">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- View Recipe Modal -->
+    <div id="view-recipe-modal" class="modal">
+      <div class="modal-content view-modal">
+        <span class="close">&times;</span>
+        <div id="recipe-details">
+          <!-- Recipe details will be inserted here -->
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
