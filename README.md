@@ -29,17 +29,6 @@ A fully frontend Recipe Book web application that enables users to add, view, se
 - 🔄 **Undo Delete** - Restore accidentally deleted recipes
 - 🖨️ **Print Recipes** - Print-friendly recipe view
 
-## 📸 Screenshots
-
-### Home Page - Light Theme
-![Recipe Book Home](https://via.placeholder.com/800x400/e74c3c/ffffff?text=Recipe+Book+Home+Page)
-
-### Add Recipe Modal
-![Add Recipe](https://via.placeholder.com/800x400/3498db/ffffff?text=Add+Recipe+Modal)
-
-### Recipe Details View
-![Recipe Details](https://via.placeholder.com/800x400/2ecc71/ffffff?text=Recipe+Details)
-
 ## 🛠️ Technologies Used
 
 - **HTML5** - Semantic markup and structure
