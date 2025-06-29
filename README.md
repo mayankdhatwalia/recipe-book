@@ -218,11 +218,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-- GitHub: [](https://github.com/mayankdhatwalia)
-- Project Link: [](https://github.com/mayankdhatwalia/recipe-book)
+- GitHub: [@mayankdhatwalia](https://github.com/mayankdhatwalia)
+- Project Link: [Mayank's Recipe Book](https://github.com/mayankdhatwalia/recipe-book)
 
 ---
 
 Made with ❤️ and JavaScript
-
-[Back to top ↑](#-recipe-book---digital-cookbook-web-application)
